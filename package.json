@@ -9,9 +9,12 @@
     "format": "prettier --write . --cache",
     "generate-routes": "tsr generate",
     "lint": "eslint --cache",
+    "prepare": "husky",
     "preview": "vite preview",
-    "typecheck": "tsc --noEmit",
-    "prepare": "husky"
+    "typecheck": "tsc --noEmit"
+  },
+  "lint-staged": {
+    "*": "prettier --write --ignore-unknown"
   },
   "dependencies": {
     "@base-ui/react": "^1.9.0",
@@ -50,6 +53,7 @@
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.7",
     "husky": "^9.1.7",
+    "lint-staged": "^17.6.0",
     "prettier": "^3.9.10",
     "prettier-plugin-jsdoc": "^1.8.1",
     "prettier-plugin-tailwindcss": "^0.8.1",
