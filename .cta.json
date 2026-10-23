@@ -1,5 +1,5 @@
 {
-  "projectName": "start-app",
+  "projectName": "tanstack-start-shadcn-ui",
   "mode": "file-router",
   "typescript": true,
   "packageManager": "bun",
